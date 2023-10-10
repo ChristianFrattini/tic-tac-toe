@@ -1,0 +1,20 @@
+
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border: 1px solid #999;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  
+    &.winning {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+  }
+  

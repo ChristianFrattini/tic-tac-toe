@@ -1,4 +1,4 @@
-
+import './square.styles.scss'
 
 const Square=({ value, onClick })=> {
   return (

@@ -1,4 +1,5 @@
 import Square from "../square/square.component";
+import './board.styles.scss'
 
 const Board=({ squares, onClick })=> {
   return (
