@@ -16,6 +16,11 @@ const Game=()=> {
     setXIsNext(!xIsNext);
   };
 
+  const reset=()=>{
+    setSquares(Array(9).fill(null));
+    setXIsNext(true);
+  }
+
   const winner = calculateWinner(squares);
   const status = winner
     ? `Winner: ${winner}`
@@ -25,7 +30,11 @@ const Game=()=> {
     <div className="app">
       <div className="status">{status}</div>
       <Board squares={squares} onClick={handleClick} />
+      <div>
+        <button onClick={reset}>Play Again</button>
+      </div>
     </div>
+
   );
 }
 
