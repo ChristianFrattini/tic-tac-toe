@@ -1,11 +1,15 @@
 import './App.css'
+import Game from './components/game/game.component'
 
-function App() {
+const App=() =>{
   
 
   return (
     <div>
-      <h1>Welcome</h1>
+      <h1>Play Tic-Tac-Toe</h1>
+      <div>
+        <Game/>
+      </div>
     </div>
   )
 }
